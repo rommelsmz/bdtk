@@ -8,7 +8,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
+:root{
+  --azul: #1f1375;
+  --naranja:#ff6801;
+}
 body {
   background: #fff;
   color: #666666;
@@ -176,13 +179,12 @@ h6 {
 #intro {
   display: table;
   width: 100%;
-  height: 100vh;
-  background: #000;
+  height: 60vh;
 }
 
 #intro .carousel-item {
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -190,7 +192,7 @@ h6 {
 
 #intro .carousel-item::before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -238,6 +240,7 @@ h6 {
 #intro p {
   width: 80%;
   margin: 0 auto 30px auto;
+  font-size: 1.7em;
   color: #fff;
 }
 
@@ -602,7 +605,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #featured-services {
-  background: #000;
+  background: white;
 }
 
 #featured-services .box {
@@ -610,7 +613,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #featured-services .box-bg {
-  background-image: linear-gradient(0deg, #000000 0%, #242323 50%, #000000 100%);
+  background-image: linear-gradient(0deg, #fff 0%, rgb(248, 245, 245) 50%, #fff 100%);
 }
 
 #featured-services i {
@@ -627,17 +630,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #featured-services h4 a {
-  color: #fff;
+  color:var(--azul);
 }
 
 #featured-services h4 a:hover {
-  color: #ff6801;
+  color:var(--naranja);
 }
 
 #featured-services p {
   font-size: 14px;
   line-height: 24px;
-  color: #fff;
+  color: #333;
   margin-bottom: 0;
 }
 
@@ -645,7 +648,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #about {
-  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background: url("../img/fondo.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
@@ -722,7 +725,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-col h2 a {
-  color: #000;
+  color:var(--azul);
 }
 
 #about .about-col h2 a:hover {
@@ -740,43 +743,43 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 
-#services {
+#beneficios {
   background: #fff;
   background-size: cover;
   padding: 60px 0 40px 0;
 }
 
-#services .box {
+#beneficios .box {
   margin-bottom: 30px;
 }
 
-#services .icon {
+#beneficios .icon {
   float: left;
 }
 
-#services .icon i {
+#beneficios .icon i {
   color: #ff6801;
   font-size: 36px;
   line-height: 1;
   transition: 0.5s;
 }
 
-#services .title {
+#beneficios .title {
   margin-left: 60px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-#services .title a {
-  color: #111;
+#beneficios .title a {
+  color: var(--azul);
 }
 
-#services .box:hover .title a {
+#beneficios .box:hover .title a {
   color: #ff6801;
 }
 
-#services .description {
+#beneficios .description {
   font-size: 14px;
   margin-left: 60px;
   line-height: 24px;
@@ -1356,9 +1359,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #footer {
-  background: #000;
+  background:var(--azul);
   padding: 0 0 30px 0;
-  color: #eee;
+  color: var(--naranja);
   font-size: 14px;
 }
 
@@ -1512,6 +1515,31 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-size: 13px;
   color: #ddd;
+}
+
+.plan-action{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+.btn-action {
+  border:solid 1px var(--naranja);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background-color: #ff6801;
+}
+
+.btn-action:hover {
+  background: #fff;
+  color: #ff6801;
 }
 
 /*--------------------------------------------------------------
