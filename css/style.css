@@ -129,8 +129,8 @@ h6 {
 
 #header {
   background: white;
-  padding: 30px 0;
-  height: 92px;
+  padding: 30px 0 0;
+  height: fit-content;
   position: fixed;
   left: 0;
   top: 0;
@@ -140,10 +140,10 @@ h6 {
 }
 
 #header.header-scrolled {
- /* background: rgba(0, 0, 0, 0.9);*/
-  padding: 20px 0;
-  height: 72px;
+  padding: 30px 0 0;
+  height: fit-content;
   transition: all 0.5s;
+  box-shadow: 1px 0 1px 0 #263238;
 }
 
 #header #logo {
@@ -168,6 +168,9 @@ h6 {
 }
 
 #header #logo img {
+  position: relative;
+  top:-10px;
+  width: 200px;
   padding: 0;
   margin: 0;
 }
@@ -239,14 +242,14 @@ h6 {
 #intro h2 {
   color: #fff;
   margin-bottom: 30px;
-  font-size: 48px;
+  font-size: 1.7em;
   font-weight: 700;
 }
 
 #intro p {
   width: 80%;
   margin: 0 auto 30px auto;
-  font-size: 1.7em;
+  font-size: 1.5em;
   color: #fff;
 }
 
@@ -1368,7 +1371,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer {
   background:var(--azul);
   padding: 0 0 30px 0;
-  color: var(--naranja);
+  color: #FFFFFF;
   font-size: 14px;
 }
 
@@ -1574,7 +1577,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (min-width: 1024px) {
   #header #logo {
-    padding-left: 60px;
+    padding-left: 30px;
   }
 
   #intro p {
@@ -1587,7 +1590,26 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #nav-menu-container {
-    padding-right: 60px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 1130px) {
+  #nav-menu-container {
+    display: none;
+  }
+
+  #mobile-nav-toggle {
+    display: inline;
+  }
+
+  #intro h2 {
+    margin: 10px auto;
+    font-size: 1.5em;
+  }
+
+  #intro p {
+    font-size: 1.3em;
   }
 }
 
