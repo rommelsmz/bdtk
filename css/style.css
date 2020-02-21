@@ -185,6 +185,7 @@ h6 {
 #intro .carousel-item {
   width: 100%;
   height: 65vh;
+  min-height: 390px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -756,7 +757,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #beneficios .box {
-  margin-bottom: 30px;
+  height: 190px;
 }
 
 #beneficios .icon {
@@ -1596,7 +1597,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #header #logo h1 {
-    font-size: 28px;
+    font-size: 1em;
   }
 
   #header #logo img {
@@ -1604,7 +1605,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #intro h2 {
-    font-size: 28px;
+    margin: 10px auto;
+    font-size: 1em;
+  }
+
+  #intro p {
+    font-size: 0.9em;
   }
 
   #nav-menu-container {
