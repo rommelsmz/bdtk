@@ -184,10 +184,14 @@ h6 {
 
 #intro .carousel-item {
   width: 100%;
-  height: 60vh;
+  height: 65vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#intro .carousel-content h2, #intro .carousel-content p {
+  text-shadow: 0 0 0.1em black;
 }
 
 #intro .carousel-item::before {
@@ -227,7 +231,7 @@ h6 {
 }
 
 #intro .carousel-content {
-  padding-top: 5em;
+  padding-top: 2em;
   text-align: center;
 }
 
@@ -651,7 +655,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about {
   background: url("../img/fondo.jpg") center top no-repeat fixed;
   background-size: cover;
-  padding: 60px 0 40px 0;
+  padding: 40px 0;
   position: relative;
 }
 
@@ -748,7 +752,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #beneficios {
   background: #fff;
   background-size: cover;
-  padding: 60px 0 40px 0;
+  padding: 0 0 40px 0;
 }
 
 #beneficios .box {
@@ -1573,7 +1577,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #intro p {
-    width: 60%;
+    width: 80%;
   }
 
   #intro .carousel-control-prev,
@@ -1610,4 +1614,64 @@ body.mobile-nav-active #mobile-nav-toggle {
   #mobile-nav-toggle {
     display: inline;
   }
+}
+
+.ih-item.circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ih-item.circle.effect1 .spinner {
+  width: 130px;
+  height: 130px;
+  border: 14px solid var(--naranja);
+  border-right-color: var(--azul);
+  border-bottom-color: var(--azul);
+  border-radius: 50%;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+}
+
+.ih-item.circle.effect1:hover .spinner {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.ih-item.circle.effect1 .img {
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 46px;
+  right: 0;
+  width: auto;
+  height: auto;
+}
+
+.ih-item.circle.effect1 .img i {
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+  font-size: 51px;
+  color: #e46713;
+  background-color: #fff;
+}
+
+.ih-item.circle.effect1 .info {
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+#planes .about-col {
+  max-width: 400px;
+  margin: auto;
 }
