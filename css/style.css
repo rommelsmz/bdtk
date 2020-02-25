@@ -12,6 +12,9 @@
   --azul: #1f1375;
   --naranja:#ff6801;
 }
+.text-naranja{
+  color: var(--naranja);
+}
 body {
   background: #fff;
   color: #666666;
