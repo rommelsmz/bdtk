@@ -21,7 +21,7 @@ body {
   margin-top: -5px;
   border-radius: 25px;
 }
-#btnLogin a {
+#btnLogin a, #mobile-nav ul li#btnLogin a{
   color: white;
 }
 .text-naranja{
@@ -480,7 +480,7 @@ h6 {
 #mobile-nav {
   position: fixed;
   top: 0;
-  padding-top: 18px;
+  padding: 18px 15px 0;
   bottom: 0;
   z-index: 998;
   background:white;
@@ -498,6 +498,7 @@ h6 {
 
 #mobile-nav ul li {
   position: relative;
+    margin: 1px auto;
 }
 
 #mobile-nav ul li a {
@@ -1678,6 +1679,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-transition: transform 0.5s ease-in-out;
   -moz-transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
+}
+
+.miniSpinner {
+    border: 3px solid var(--naranja);
+    border-right-color: var(--azul);
+    border-bottom-color: var(--azul);
+    border-radius: 50%;
+    padding: 3px 7px;
 }
 
 .ih-item.circle.effect1:hover .spinner {
