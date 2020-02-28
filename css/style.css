@@ -12,6 +12,18 @@
   --azul: #1f1375;
   --naranja:#ff6801;
 }
+body {
+  overflow-x: hidden;
+}
+#btnLogin {
+  background-color: var(--azul);
+  padding: 5px 5px 0;
+  margin-top: -5px;
+  border-radius: 25px;
+}
+#btnLogin a {
+  color: white;
+}
 .text-naranja{
   color: var(--naranja);
 }
