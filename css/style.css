@@ -87,6 +87,12 @@ h6 {
   color: #fff;
 }
 
+.bodegas {
+  margin: 0 10% 18px;
+  height: auto;
+  width: 45%;
+  max-width: 200px;
+}
 /* Prelaoder */
 
 #preloader {
